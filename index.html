@@ -4,9 +4,11 @@
 	<title>example</title>
 </head>
 <body>
-	<input type="text" id="f">
-	<ul id="list"></ul>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<div id = "app">
+		<input type="text" v-model="message">
+		<p>{{message}}</p>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
 	<script src="script.js"></script>
 </body>
 </html>
