@@ -4,6 +4,9 @@ let vm= new Vue({
 		message: "Hello, Vue.js!",
 		checked: false,
 		p: "Second",
-		l: "C++"
+		l: "C++",
+		n: 5,
+		c: true,
+		text: "reverse"
 	}
 })
