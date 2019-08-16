@@ -52,6 +52,19 @@
 		</label>
 		<h1 v-bind:class="{'header--blue':hS.blue,
 						   'header--underl':hS.underl}">Заголовок</h1>
+
+		<ul>
+			<li v-for="item in items">
+				{{item.text}}
+			</li>
+		</ul>
+
+		<ul>
+			<li v-for="i in n">
+				{{i*i}}
+			</li>
+		</ul>
+
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
 	<script src="script.js"></script>

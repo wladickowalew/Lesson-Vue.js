@@ -1,3 +1,4 @@
+let mas = [{text: "1"},{text: "Hi"},{text: "ethwrth"}]
 let vm= new Vue({
 	el: "#app",
 	data:{
@@ -12,6 +13,8 @@ let vm= new Vue({
 		hS: {
 			blue: false,
 			underl: false
-		}
+		},
+		items: mas,
+		num: 5
 	}
 })
