@@ -2,11 +2,12 @@
 <html>
 <head>
 	<title>example</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<div id = "app">
 		<input type="text" v-model="message">
-		<p>{{message}}</p>
+		<p>{{message}}</p>s
 
 		<input type="checkbox" v-model="checked">
 		<p>{{checked}}</p>
@@ -37,6 +38,20 @@
 			<input type="text" v-model="text">
 			<p>{{text.split("").reverse().join("")}}</p>
 		</div>
+
+		<div>
+			<input type="text" v-model="query">
+			<a v-bind:href="'https://google.com/search?q='+query">Искать</a>
+		</div>
+
+		<label>
+			<input type="checkbox" v-model="hS.blue">Blue
+		</label>
+		<label>
+			<input type="checkbox" v-model="hS.underl">Underlined
+		</label>
+		<h1 v-bind:class="{'header--blue':hS.blue,
+						   'header--underl':hS.underl}">Заголовок</h1>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
 	<script src="script.js"></script>

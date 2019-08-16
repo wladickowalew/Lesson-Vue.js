@@ -7,6 +7,11 @@ let vm= new Vue({
 		l: "C++",
 		n: 5,
 		c: true,
-		text: "reverse"
+		text: "reverse",
+		query: "котята",
+		hS: {
+			blue: false,
+			underl: false
+		}
 	}
 })
